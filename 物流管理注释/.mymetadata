@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="物流管理"
+  id="myeclipse.1388733007170"
+  context-root="/transportTracking"
+  j2ee-spec="6.0"
+  archive="物流管理.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Sat Feb 08 21:55:37 CST 2014
+sessionFactoryName=wuliu.com.Fatory.HibernateSessionFactory
+genBasicCompId=false
+profile=
+daoSFId=
+version=3.3
+jndiPath=
+detectM2M=false
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=sequence
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=
+genAnnotations=false
+reSettingsFile=
+configFile=/\u7269\u6D41\u7BA1\u7406/src/applicationContext.xml
+createConfigFile=false
+addLibs2Classpath=true

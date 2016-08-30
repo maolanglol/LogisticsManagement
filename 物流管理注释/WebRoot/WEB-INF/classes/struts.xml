@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+      <package name="Debug" extends="struts-default" namespace="/Debug">
+             <action name="queryDebugAction" class="queryDebugAction">
+                 <result name="success" type="dispatcher">/index.jsp</result>
+                 <result name="input" type="dispatcher">/index.jsp</result>
+             </action>
+      </package>
+      <package name="struts2" extends="json-default" namespace="/">
+             	<!-- 验证码图片 -->
+		  <action name="getVerificationCode" class="verificationCode" method="getVerificationCode">
+			  <result type="stream"><!-- 返回类型是stream流 -->
+				  <param name="contentType">image/jpeg</param><!-- 指定内容类型是image/jpeg -->
+				  <param name="inputtName">inputStream</param><!-- 指定返回的变量是inputStream -->
+			  </result>
+		  </action>
+		  <!-- 校验验证码 -->
+          <action name="validateVerificationCode" class="verificationCode" method="validateVerificationCode">
+             	<result type="json">
+             		<param name="root">MSG</param>
+             	</result>
+          </action>
+      </package>
+</struts>    
